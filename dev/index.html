@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+    <title>Crazy Bird</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;                
+        }
+    </style>
+
+    <!-- Load Pixi.js Engine and libraries -->
+    <script src="js/pixi.js"></script>
+    <script src="js/sat.js"></script>
+    <script src="js/pixi-particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.min.js"></script>
+    <body>
+    <!-- Load Crazy Bird -->
+    <script src="js/game.js"></script>
+    <script src="js/boot.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/collisions.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/end.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            C.boot.init();
+        }, false);
+    </script>
+    </body>
+</html>
