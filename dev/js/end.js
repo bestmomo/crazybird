@@ -25,6 +25,7 @@ C.end = {
         C.sprites.gameOver.y = C.renderer.height + 70;
         C.sprites.playAgain.y = C.renderer.height + 70;
         C.level = 1;
+        C.score = 0;
 
         // Set planes
         C.sprites.planes.forEach(function (e) {
@@ -35,6 +36,7 @@ C.end = {
         // Set balloons
         C.sprites.balloons.forEach(function (e) {
             e.state = false;
+            e.gotoAndStop(0);            
             e.position.set(C.renderer.width + 50, C.utils.getRandomInt(C.pannelHeight + 75, C.renderer.height - 75));
         });
         C.balloonsDone = 0;
